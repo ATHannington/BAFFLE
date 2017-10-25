@@ -1,40 +1,51 @@
 !********************************************************************************
-!* This file is pCRt of python_finite_volume_solver
+!* This file is adapted from part of python_finite_volume_solver
+!* (https://github.com/bwvdnbro/python_finite_volume_solver), and is part of 
+!* BAFFLE (https://github.com/ATHannington/BAFFLE)
+!*
+!* BAFFLE:
+!* Copyright (C) 2017 Andrew Hannington (ath4@st-andrews.ac.uk)
+!*
+!* python_finite_volume_solver:
 !* Copyright (C) 2017 Kenneth Wood (kw25@st-andrews.ac.uk)
 !*                    Bert Vandenbroucke (bert.vandenbroucke@gmail.com)
 !*
-!* python_finite_volume_solver is free software: you can redistribute it and/or
-!* modify it under the terms of the GNU Affero General Public License as
-!* published by the Free SoftwCRe Foundation, either version 3 of the License, or
+!* python_finite_volume_solver and BAFFLE are free software: you can redistribute 
+!* them and/or modify them under the terms of the GNU Affero General Public License
+!* as published by the Free Software Foundation, either version 3 of the License, or
 !* (at your option) any later version.
 !*
-!* python_finite_volume_solver is distributed in the hope that it will be useful,
-!* but WITOUT ANY WCRRANTY; without even the implied wCRranty of
-!* MERCHANTABILITY or FITNESS FOR A PCRTICULCR PURPOSE. See the
+!* python_finite_volume_solver and BAFFLE are distributed in the hope that they will 
+!* be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+!* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 !* GNU Affero General Public License for more details.
 !*
 !* You should have received a copy of the GNU Affero General Public License
-!* along with python_finite_volume_solver. If not, see
+!* along with python_finite_volume_solver and BAFFLE. If not, see
 !* <http://www.gnu.org/licenses/>.
 !********************************************************************************
 
 !********************************************************************************
-!* @file riemansolver.f
+!* @file riemann.f90
 !*
-!* @brief Stanalone Riemann solver librCRy: Fortran 77 version.
+!* @brief Standalone Riemann solver library: Fortran 90 version.
 !*
 !* This Riemann solver is the original exact Riemann solver as it is presented in
 !* Toro, E., Riemann Solvers and Numerical Methods for Fluid Dynamics, 3rd
 !* edition (Springer, 2009), chapter 4.
 !*
-!* It was cCRefully copied (by hand) from that book to actual Fortran 77 code by
+!* It was carefully copied (by hand) from that book to actual Fortran 77 code by
 !* Kenneth Wood, and slightly modified to be used as a Riemann solver routine in
-!* a 1-3D finite volume code.
+!* a 1-3D finite volume code. It was then adapted to Fortran 90, and combined with
+!* Bert Vandenbroucke's python riemann solver, by Andrew Hannington.
 !*
 !* Additional changes (including this documentation) were made by Bert
 !* Vandenbroucke to make the Python, C++ and Fortran version of the Riemann
-!* solver more homogeneous.
+!* solver more homogeneous. Subsequent changes (including edits to this documentation)
+!* were made by Andrew Hannington, including adding vacuum capability from Bert
+!* Vandenbroucke's own python Riemann solver.
 !*
+!* @author Andrew Hannington (ath4@st-andrews.ac.uk)
 !* @author Kenneth Wood (kw25@st-andrews.ac.uk)
 !* @author Bert Vandenbroucke (bv7@st-andrews.ac.uk)
 !********************************************************************************
