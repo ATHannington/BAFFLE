@@ -1,3 +1,39 @@
+!********************************************************************************
+!* This file is part of:
+!* BAFFLE (https://github.com/ATHannington/BAFFLE)
+!* BAFFLE: BAsic Fortran FLuids Engine
+!*
+!* BAFFLE:
+!* Copyright (C) 2017 Andrew Hannington (ath4@st-andrews.ac.uk)
+!*
+!* This software is a derivative of work by Bert Vandenbroucke
+!* (bert.vandenbroucke@gmail.com)
+!* Find more work by Bert Vandenbroucke at: (https://github.com/bwvdnbro)
+!*
+!* BAFFLE is a free software: you can redistribute it and/or modify it under the 
+!* terms of the GNU Affero General Public License
+!* as published by the Free Software Foundation, either version 3 of the License, or
+!* (at your option) any later version.
+!*
+!* BAFFLE is distributed in the hope that it will 
+!* be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+!* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+!* GNU Affero General Public License for more details.
+!*
+!* You should have received a copy of the GNU Affero General Public License
+!* along with BAFFLE. If not, see
+!* <http://www.gnu.org/licenses/>.
+!********************************************************************************
+
+!********************************************************************************
+!* @file cell_wide_slope_limiter_3D.f90
+!*
+!* @Seperate advanced slope limiter for slope of primitive variables calculated in 
+!* get_gradients_subroutine_#.f90. 3D version : Fortran 90 version
+!*
+!* @author Andrew Hannington (ath4@st-andrews.ac.uk)
+!********************************************************************************
+
 !-------------------------------------------------------------------------------
 !*******************************************************************************
 !-------------------------------------------------------------------------------
