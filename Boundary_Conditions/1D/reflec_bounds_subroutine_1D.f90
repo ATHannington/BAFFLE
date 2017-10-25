@@ -6,6 +6,10 @@
 !* BAFFLE:
 !* Copyright (C) 2017 Andrew Hannington (ath4@st-andrews.ac.uk)
 !*
+!* This software is a derivative of work by Bert Vandenbroucke
+!* (bert.vandenbroucke@gmail.com)
+!* 
+!* Find more work by Bert Vandenbroucke at: (https://github.com/bwvdnbro)
 !* BAFFLE is a free software: you can redistribute it and/or modify it under the 
 !* terms of the GNU Affero General Public License
 !* as published by the Free Software Foundation, either version 3 of the License, or
