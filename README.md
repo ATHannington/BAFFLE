@@ -7,6 +7,8 @@ BAFFLE is a direct derivative of work by Bert Vandenbroucke (bert.vandenbroucke@
 
 BAFFLE was written by Andrew Hannington (ath4@st-andrews.ac.uk), as part of Summer project work with Prof. Ian Bonnell, St Andrews University (iab1@st-andrews.ac.uk).  
 
+BAFFLE was a collaboration of the author Andrew Hannington (ath4@st-andrews.ac.uk), with Bert Vandenbroucke (bert.vandenbroucke@gmail.com) and William Lucas (wel2@st-andrews.ac.uk), under the supervision of Prof. Ian Bonnell, St Andrews University (iab1@st-andrews.ac.uk).  
+
 Copyright (C) 2017 Andrew Hannington (ath4@st-andrews.ac.uk)
 
 !----------------------------------------------------------------------------------------------------------------------------------
