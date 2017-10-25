@@ -1,3 +1,38 @@
+!********************************************************************************
+!* This file is part of:
+!* BAFFLE (https://github.com/ATHannington/BAFFLE)
+!* BAFFLE: BAsic Fortran FLuids Engine
+!*
+!* BAFFLE:
+!* Copyright (C) 2017 Andrew Hannington (ath4@st-andrews.ac.uk)
+!*
+!* This software is a derivative of work by Bert Vandenbroucke
+!* (bert.vandenbroucke@gmail.com)
+!* Find more work by Bert Vandenbroucke at: (https://github.com/bwvdnbro)
+!*
+!* BAFFLE is a free software: you can redistribute it and/or modify it under the 
+!* terms of the GNU Affero General Public License
+!* as published by the Free Software Foundation, either version 3 of the License, or
+!* (at your option) any later version.
+!*
+!* BAFFLE is distributed in the hope that it will 
+!* be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+!* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+!* GNU Affero General Public License for more details.
+!*
+!* You should have received a copy of the GNU Affero General Public License
+!* along with BAFFLE. If not, see
+!* <http://www.gnu.org/licenses/>.
+!********************************************************************************
+
+!********************************************************************************
+!* @file init_conds_1DSod.f90
+!*
+!* @Initial Conditions subroutine for 1D Sod Shock Test Tube Simulation: Fortran 90 version.
+!*
+!* @author Andrew Hannington (ath4@st-andrews.ac.uk)
+!********************************************************************************
+
 !===============================================================================
 !
 !*** 				INITIAL CONDITIONS			     ***
@@ -19,10 +54,13 @@ subroutine init_conds(x,y,z,rho,ux,uy,uz,p)
 		Real*8 :: rmax							!Maximum radius of high pressure region
 
 		real*8,external::isotherm_p					!Isothermal Pressure
-
-!	Cells format: 	cells(i,j,k,1:23) = (/m,qx,qy,qz,E,rho,ux,uy,uz,p,V,Midx,Midy,Midz, &
-!						& grad_d_x,grad_d_y,grad_d_z,grad_ux,grad_uy,grad_uz, &
-!						& grad_p_x,grad_p_y,grad_p_z	/)	
+		
+!#	Cells format: 	cells(i,j,k,1:29) = (/m,qx,qy,qz,E,rho,ux,uy,uz,p,V,Midx,Midy,Midz, &
+!#						& grad_d_x,grad_d_y,grad_d_z, &
+!#						& grad_ux_x,grad_uy_x,grad_uz_x, &
+!#						& grad_ux_y,grad_uy_y,grad_uz_y, &
+!#						& grad_ux_z,grad_uy_z,grad_uz_z, &
+!#						& grad_p_x,grad_p_y,grad_p_z /)
 
 !	uy=0.d0
 	uz=0.d0
