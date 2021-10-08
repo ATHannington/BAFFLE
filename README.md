@@ -1,6 +1,8 @@
 # BAFFLE (https://github.com/ATHannington/BAFFLE)
 **This project has concluded. Further work is unlikely. Please be aware that this project was for learning purposes, and the software is not optimised, fully debugged, or complete.**
+
 **A further note from the author (08-10-2021, many years later...): I am well aware of the many issues with this code (least of all the RAM stored global N dimensional array of my main variable ... yikes!), but if you are reading this please don't judge me too harshly. This was one of the very first projects I coded after all.**
+
 BAFFLE - BAsic Fortan FLuids Engine: A basic fixed cartesian grid, flux based, second order hydrodynamics code in Fortran90. Developed in collaboration with Dr B. Vandenbroucke, University of St Andrews.
 
 BAFFLE is, as the name suggests, a rather basic fluids engine written in Fortran90. 
